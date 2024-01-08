@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Rubik&display=swap");
+
+* {
+  margin: 0vh;
+  padding: 0vh;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+    font-size: 16px; /* You can adjust this base font-size according to your design */
+  }
+  
+.container{
+background: linear-gradient(to bottom, #f39c12, #e74c3c);
+width: 100%;
+height: 68.7rem;
+/* padding: 10rem 10rem; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+button{
+    margin: 0em 5em;
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+}
+
+.btn--1{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.popup{
+    width: 30rem;
+    height: 23rem;
+    background: #fff;
+    padding: 5rem;
+    border-radius: 1rem;
+   transform: translate(-50%,-50%) scale(0.1);
+   visibility: hidden;
+ transition: transform 0.4s, top 0.7s ;
+ position: absolute;
+ top: 0;
+ left: 50%;
+ text-align: center;
+}
+
+.open-popup{
+  visibility: visible;
+  transform: translate(-50%,-50%) scale(1);
+  top: 50%;
+}
+.popup h2{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.popup p{
+  font-size: 1.5rem;
+}
+
+#close{
+  font-size: 1.54rem;
+  margin: 2rem;
+  padding: 1rem 3rem;
+  border-radius: 0.6rem;
+  background-color: rgb(4, 44, 57);
+  color: #fff;
+}

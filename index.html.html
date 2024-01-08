@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./day 7.css">
+    <title> Pop Up</title>
+</head>
+<body>
+    <div class="container">
+        <button class="btn--1" onclick="openPopup()">submit</button>
+        <div class="popup">
+            <h2>Thank you!</h2>
+            <p>Your details has been successfully submitted.thanks!</p>
+            <button id="close" onclick="closePopup()">ok</button>
+        </div>
+    </div>
+
+</body>
+<script>
+   
+    let popup = document.querySelector(".popup");
+    
+
+    function openPopup(){
+       popup.classList.add("open-popup");
+
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+</html>
